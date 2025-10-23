@@ -1,0 +1,20 @@
+# 🔐 Claves/API
+key.env
+.env
+
+# 🐍 Python
+__pycache__/
+*.pyc
+
+# 🧪 Entornos virtuales
+venv/
+.env/
+
+# 🖼️ Archivos de prueba
+*.jpg
+*.png
+*.jpeg
+
+# 🗑️ Archivos del sistema/IDE
+.DS_Store
+.vscode/
