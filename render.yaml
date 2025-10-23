@@ -5,8 +5,11 @@ services:
     plan: free
     buildCommand: |
       apt-get update && apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-spa
-      pip install -r requirements.txt
-    startCommand: "python app.py"
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt --no-cache-dir
+    startCommand: "gunicorn app:app"
     envVars:
       - key: COHERE_API_KEY
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.13
