@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ocr-curp-app
+    name: ocr-cohere-example
     env: python
     plan: free
     buildCommand: |
